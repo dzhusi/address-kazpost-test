@@ -1,12 +1,9 @@
 module.exports = (sequelize, DataTypes, Model) => {
 
-    class address extends Model {}
+    class addresses extends Model {}
 
-    address.init({
+    addresses.init({
         // Model attributes are defined here
-        id: {
-            type: DataTypes.STRING,
-        },
         name: {
             type: DataTypes.STRING,
             allowNull: false
@@ -14,8 +11,8 @@ module.exports = (sequelize, DataTypes, Model) => {
     }, {
         // Other model options go here
         sequelize, // We need to pass the connection instance
-        modelName: 'realtyavgprice' // We need to choose the model name
+        modelName: 'addresses' // We need to choose the model name
     });
 
-    return address;
+    return addresses;
 }

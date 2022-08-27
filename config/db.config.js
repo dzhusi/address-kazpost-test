@@ -25,8 +25,7 @@ const connect = () => {
     db.Sequelize = Sequelize;
     db.sequelize = sequelize;
     db.tasks = require("../model/task.model")(sequelize, DataTypes, Model);
-    db.realtysalescounts = require("../model/realty-sales-count.model")(sequelize, DataTypes, Model);
-    db.realtyavgprice = require("../model/realty-avg-price.model")(sequelize, DataTypes, Model);
+    db.address = require("../model/address.model")(sequelize, DataTypes, Model);
     return db;
 
 }

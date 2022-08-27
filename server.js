@@ -5,8 +5,6 @@ require('dotenv').config()
 
 
 const taskController = require('./controller/task.controller')
-const priceController = require('./controller/price.controller')
-const salesController = require('./controller/sales.controller')
 
 
 
